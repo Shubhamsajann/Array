@@ -30,5 +30,9 @@ public class Program11 {
 
         // Print the index of the key
         System.out.println(idx);  // Output should be: 0
+
+
     }
 }
+
+
