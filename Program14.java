@@ -1,7 +1,7 @@
 public class Program14 {
 
     // Method to swap the elements in the array (reverse the array)
-    public static int[] swap(int[] arr) {
+    public static int[] reverse(int[] arr) {
         // Initialize two pointers: i from start, j from end
         for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
             // Swap elements at index i and j
@@ -18,7 +18,7 @@ public class Program14 {
         int[] arr = {10, 20, 30, 40, 50};
 
         // Call the swap method to reverse the array
-        swap(arr);
+        reverse(arr);
 
         // Print the reversed array
         for (int i = 0; i < arr.length; i++) {
