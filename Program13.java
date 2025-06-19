@@ -1,29 +1,31 @@
 public class Program13 {
-    public static boolean issorted(int arr[]){
 
-        for(int i=0;i< arr.length-1;i++){
-            if(arr[i]>arr[i+1]){
-               return false;
-            }
-
+    // Check if array is sorted in ascending order
+    public static boolean isSortedAscending(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) return false;
         }
         return true;
-
-
     }
 
-    //to finnd array is sorted or not
+    // Check if array is sorted in descending order
+    public static boolean isSortedDescending(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] < arr[i + 1]) return false;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
-int[] arr= {10,20,30,40,50};
+        int[] arr = {10, 20, 30, 40, 50};
 
-
-
-boolean sorted=issorted(arr);
-        System.out.println(sorted);
-
-
-
-
+        // Check both ascending and descending
+        if (isSortedAscending(arr)) {
+            System.out.println("Array is sorted in ascending order.");
+        } else if (isSortedDescending(arr)) {
+            System.out.println("Array is sorted in descending order.");
+        } else {
+            System.out.println("Array is not sorted.");
+        }
     }
-  
 }
