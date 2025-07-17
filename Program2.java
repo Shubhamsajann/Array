@@ -1,5 +1,7 @@
 public class Program2 {
-    //add x=35 at index 3
+    
+    //add element x=35 at index 3
+    
     public static void main(String[] args) {
 
         // Declare and initialize the original array
