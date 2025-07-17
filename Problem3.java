@@ -22,5 +22,6 @@ public class Problem3 {
         }
 
         // Output: 10 20 30 50
+        
     }
 }
